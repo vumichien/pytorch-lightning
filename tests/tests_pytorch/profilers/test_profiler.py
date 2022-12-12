@@ -219,16 +219,16 @@ def test_simple_profiler_summary(tmpdir, extended):
         expected_text = (
             f"Profiler Report{sep}"
             f"{sep_lines}"
-            f"{sep}|  Action                       |  Mean duration (s)    |  Num calls            |  Total time (s)       |  Percentage %         |"  # noqa: E501
+            f"{sep}|  Action                       |  Mean duration (s)    |  Num calls            |  Total time (s)       |  Percentage %         |"
             f"{sep_lines}"
-            f"{sep}|  Total                        |  -                    |  6                    |  7.0                  |  100 %                |"  # noqa: E501
+            f"{sep}|  Total                        |  -                    |  6                    |  7.0                  |  100 %                |"
             f"{sep_lines}"
-            f"{sep}|  on_fit_start                 |  5.7734               |  1                    |  5.7734               |  82.478               |"  # noqa: E501
-            f"{sep}|  on_before_batch_transfer     |  4.7734               |  1                    |  4.7734               |  68.192               |"  # noqa: E501
-            f"{sep}|  on_train_epoch_end           |  3.7734               |  1                    |  3.7734               |  53.906               |"  # noqa: E501
-            f"{sep}|  on_train_epoch_start         |  2.7734               |  1                    |  2.7734               |  39.62                |"  # noqa: E501
-            f"{sep}|  on_train_end                 |  1.7734               |  1                    |  1.7734               |  25.335               |"  # noqa: E501
-            f"{sep}|  on_train_start               |  0.77343              |  1                    |  0.77343              |  11.049               |"  # noqa: E501
+            f"{sep}|  on_fit_start                 |  5.7734               |  1                    |  5.7734               |  82.478               |"
+            f"{sep}|  on_before_batch_transfer     |  4.7734               |  1                    |  4.7734               |  68.192               |"
+            f"{sep}|  on_train_epoch_end           |  3.7734               |  1                    |  3.7734               |  53.906               |"
+            f"{sep}|  on_train_epoch_start         |  2.7734               |  1                    |  2.7734               |  39.62                |"
+            f"{sep}|  on_train_end                 |  1.7734               |  1                    |  1.7734               |  25.335               |"
+            f"{sep}|  on_train_start               |  0.77343              |  1                    |  0.77343              |  11.049               |"
             f"{sep_lines}{sep}"
         )
     else:

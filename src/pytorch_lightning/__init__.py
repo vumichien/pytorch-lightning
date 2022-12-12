@@ -3,7 +3,7 @@
 import logging
 from typing import Any
 
-from pytorch_lightning.__about__ import *  # noqa: F401, F403
+from pytorch_lightning.__about__ import *
 
 _DETAIL = 15  # between logging.INFO and logging.DEBUG, used for logging in production use cases
 
@@ -27,10 +27,10 @@ if not _root_logger.hasHandlers():
     _logger.addHandler(logging.StreamHandler())
     _logger.propagate = False
 
-from pytorch_lightning.callbacks import Callback  # noqa: E402
-from pytorch_lightning.core import LightningDataModule, LightningModule  # noqa: E402
-from pytorch_lightning.trainer import Trainer  # noqa: E402
-from pytorch_lightning.utilities.seed import seed_everything  # noqa: E402
+from pytorch_lightning.callbacks import Callback
+from pytorch_lightning.core import LightningDataModule, LightningModule
+from pytorch_lightning.trainer import Trainer
+from pytorch_lightning.utilities.seed import seed_everything
 
 __all__ = ["Trainer", "LightningDataModule", "LightningModule", "Callback", "seed_everything"]
 

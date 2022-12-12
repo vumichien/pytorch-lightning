@@ -19,17 +19,17 @@ if not _root_logger.hasHandlers():
     _logger.propagate = False
 
 
-from lightning_app import components  # noqa: E402, F401
-from lightning_app.__about__ import *  # noqa: E402, F401, F403
-from lightning_app.core.app import LightningApp  # noqa: E402
-from lightning_app.core.flow import LightningFlow  # noqa: E402
-from lightning_app.core.work import LightningWork  # noqa: E402
-from lightning_app.utilities.imports import _module_available  # noqa: E402
-from lightning_app.utilities.packaging.build_config import BuildConfig  # noqa: E402
-from lightning_app.utilities.packaging.cloud_compute import CloudCompute  # noqa: E402
+from lightning_app import components
+from lightning_app.__about__ import *
+from lightning_app.core.app import LightningApp
+from lightning_app.core.flow import LightningFlow
+from lightning_app.core.work import LightningWork
+from lightning_app.utilities.imports import _module_available
+from lightning_app.utilities.packaging.build_config import BuildConfig
+from lightning_app.utilities.packaging.cloud_compute import CloudCompute
 
 if _module_available("lightning_app.components.demo"):
-    from lightning_app.components import demo  # noqa: F401
+    from lightning_app.components import demo
 
 _PACKAGE_ROOT = os.path.dirname(__file__)
 _PROJECT_ROOT = os.path.dirname(_PACKAGE_ROOT)
