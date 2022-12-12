@@ -215,7 +215,7 @@ def _show_non_gallery_install_app_prompt(gh_url, yes_arg):
             folder_name = gh_url.split("/")[-1]
 
         org = re.search(r"github.com\/(.*)\/", gh_url).group(1)
-    except Exception as e:  # noqa
+    except Exception as e:
         m = """
         Your github url is not supported. Here's the supported format:
         https://github.com/YourOrgName/your-repo-name
@@ -271,7 +271,7 @@ def _validate_name(name, resource_type, example):
     # ensure resource identifier is properly formatted
     try:
         org, resource = name.split("/")
-    except Exception as e:  # noqa
+    except Exception as e:
         m = f"""
         {resource_type} name format must have organization/{resource_type}-name
 
