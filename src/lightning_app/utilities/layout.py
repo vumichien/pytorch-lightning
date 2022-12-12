@@ -21,7 +21,7 @@ def _add_comment_to_literal_code(method, contains, comment):
 
         return "\n".join(lines)
 
-    except Exception as e:  # noqa
+    except Exception as e:
         return ""
 
 

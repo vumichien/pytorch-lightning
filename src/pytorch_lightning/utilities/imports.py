@@ -159,7 +159,7 @@ _WANDB_GREATER_EQUAL_0_12_10 = _WANDB_AVAILABLE and _compare_version("wandb", op
 _XLA_AVAILABLE: bool = _package_available("torch_xla")
 
 
-from pytorch_lightning.utilities.xla_device import XLADeviceUtils  # noqa: E402
+from pytorch_lightning.utilities.xla_device import XLADeviceUtils
 
 _TPU_AVAILABLE = XLADeviceUtils.tpu_device_exists()
 
