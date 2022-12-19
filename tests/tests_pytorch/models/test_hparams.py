@@ -407,7 +407,7 @@ class LocalVariableModelSuperLast(BoringModel):
     def __init__(self, arg1, arg2, *args, **kwargs):
         self.argument1 = arg1  # arg2 intentionally not set
         arg1 = "overwritten"
-        local_var = 1234  # noqa: F841
+        local_var = 1234
         super().__init__(*args, **kwargs)  # this is intentionally here at the end
 
 
@@ -418,7 +418,7 @@ class LocalVariableModelSuperFirst(BoringModel):
         super().__init__(*args, **kwargs)
         self.argument1 = arg1  # arg2 intentionally not set
         arg1 = "overwritten"
-        local_var = 1234  # noqa: F841
+        local_var = 1234
         self.save_hyperparameters()  # this is intentionally here at the end
 
 

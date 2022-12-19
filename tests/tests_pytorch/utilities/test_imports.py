@@ -62,49 +62,49 @@ def test_requirement_avaliable():
 
 def test_imports():
     try:
-        import apex  # noqa
+        import apex
     except ModuleNotFoundError:
         assert not _APEX_AVAILABLE
     else:
         assert _APEX_AVAILABLE
 
     try:
-        import bagua  # noqa
+        import bagua
     except ModuleNotFoundError:
         assert not _BAGUA_AVAILABLE
     else:
         assert _BAGUA_AVAILABLE
 
     try:
-        import deepspeed  # noqa
+        import deepspeed
     except ModuleNotFoundError:
         assert not _DEEPSPEED_AVAILABLE
     else:
         assert _DEEPSPEED_AVAILABLE
 
     try:
-        import fairscale.nn  # noqa
+        import fairscale.nn
     except ModuleNotFoundError:
         assert not _FAIRSCALE_AVAILABLE
     else:
         assert _FAIRSCALE_AVAILABLE
 
     try:
-        import horovod.torch  # noqa
+        import horovod.torch
     except ModuleNotFoundError:
         assert not _HOROVOD_AVAILABLE
     else:
         assert _HOROVOD_AVAILABLE
 
     try:
-        import omegaconf  # noqa
+        import omegaconf
     except ModuleNotFoundError:
         assert not _OMEGACONF_AVAILABLE
     else:
         assert _OMEGACONF_AVAILABLE
 
     try:
-        import poptorch  # noqa
+        import poptorch
     except ModuleNotFoundError:
         assert not _POPTORCH_AVAILABLE
     else:

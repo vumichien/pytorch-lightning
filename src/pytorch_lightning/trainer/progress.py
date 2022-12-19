@@ -124,7 +124,7 @@ class Progress(BaseProgress):
     current: ReadyCompletedTracker = field(default_factory=ProcessedTracker)
 
     def __post_init__(self) -> None:
-        if type(self.total) is not type(self.current):  # noqa: E721
+        if type(self.total) is not type(self.current):
             raise ValueError("The `total` and `current` instances should be of the same class")
 
     def increment_ready(self) -> None:
