@@ -15,9 +15,9 @@
 
 import numpy
 
-from pytorch_lightning.utilities.apply_func import move_data_to_device  # noqa: F401
-from pytorch_lightning.utilities.distributed import AllGatherGrad  # noqa: F401
-from pytorch_lightning.utilities.enums import (  # noqa: F401
+from pytorch_lightning.utilities.apply_func import move_data_to_device
+from pytorch_lightning.utilities.distributed import AllGatherGrad
+from pytorch_lightning.utilities.enums import (
     _AcceleratorType,
     _StrategyType,
     AMPType,
@@ -25,8 +25,8 @@ from pytorch_lightning.utilities.enums import (  # noqa: F401
     GradClipAlgorithmType,
     LightningEnum,
 )
-from pytorch_lightning.utilities.grads import grad_norm  # noqa: F401
-from pytorch_lightning.utilities.imports import (  # noqa: F401
+from pytorch_lightning.utilities.grads import grad_norm
+from pytorch_lightning.utilities.imports import (
     _APEX_AVAILABLE,
     _BAGUA_AVAILABLE,
     _FAIRSCALE_AVAILABLE,
@@ -53,14 +53,9 @@ from pytorch_lightning.utilities.imports import (  # noqa: F401
     _TPU_AVAILABLE,
     _XLA_AVAILABLE,
 )
-from pytorch_lightning.utilities.parameter_tying import find_shared_parameters, set_shared_parameters  # noqa: F401
-from pytorch_lightning.utilities.parsing import AttributeDict, flatten_dict, is_picklable  # noqa: F401
-from pytorch_lightning.utilities.rank_zero import (  # noqa: F401
-    rank_zero_deprecation,
-    rank_zero_info,
-    rank_zero_only,
-    rank_zero_warn,
-)
+from pytorch_lightning.utilities.parameter_tying import find_shared_parameters, set_shared_parameters
+from pytorch_lightning.utilities.parsing import AttributeDict, flatten_dict, is_picklable
+from pytorch_lightning.utilities.rank_zero import rank_zero_deprecation, rank_zero_info, rank_zero_only, rank_zero_warn
 
 FLOAT16_EPSILON = numpy.finfo(numpy.float16).eps
 FLOAT32_EPSILON = numpy.finfo(numpy.float32).eps

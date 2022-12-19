@@ -56,7 +56,7 @@ if _TORCH_GREATER_EQUAL_1_10:
     @contextmanager
     def _no_dispatch() -> Iterator[None]:
         """Temporarily disables the Python dispatch mode."""
-        guard = _DisableTorchDispatch()  # noqa F841
+        guard = _DisableTorchDispatch()  # F841
         try:
             yield
         finally:

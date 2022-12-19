@@ -1,1 +1,1 @@
-from core.components.script_runner.script_runner import ScriptRunner  # noqa: F401
+from core.components.script_runner.script_runner import ScriptRunner

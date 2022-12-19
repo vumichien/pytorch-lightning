@@ -19,8 +19,8 @@ rank_zero_deprecation(
     "`pytorch_lightning.utilities.params_tying.set_shared_parameters`"
 )
 
-from functools import wraps  # noqa: E402
-from typing import Callable  # noqa: E402
+from functools import wraps
+from typing import Callable
 
 
 def parameter_validation(fn: Callable) -> Callable:

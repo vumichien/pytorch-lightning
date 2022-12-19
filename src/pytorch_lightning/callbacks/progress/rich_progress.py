@@ -520,7 +520,7 @@ def _detect_light_colab_theme() -> bool:
         get_ipython  # type: ignore
     except NameError:
         return False
-    ipython = get_ipython()  # noqa: F821
+    ipython = get_ipython()
     if "google.colab" in str(ipython.__class__):
         try:
             from google.colab import output
