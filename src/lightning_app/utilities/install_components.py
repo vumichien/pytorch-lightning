@@ -9,8 +9,8 @@ import lightning_app
 
 _PACKAGE_REGISTRY_COMMANDS = {
     "quick-start": [
-        "curl https://gist.githubusercontent.com/tchaton/b81c8d8ba0f4dd39a47bfa607d81d6d5/raw/a5f84a40c03e349f659e219cc328ffec1b22b2c9/train_script.py > train_script.py",  # noqa E501
-        "curl https://gist.githubusercontent.com/tchaton/2df61d77a0adbd0f105b1c2dc01ae83a/raw/f5a86d9e0d05d391dec58545c0c31b43271a3541/requirements.txt > requirements.txt",  # noqa E501
+        "curl https://gist.githubusercontent.com/tchaton/b81c8d8ba0f4dd39a47bfa607d81d6d5/raw/a5f84a40c03e349f659e219cc328ffec1b22b2c9/train_script.py > train_script.py",  # E501
+        "curl https://gist.githubusercontent.com/tchaton/2df61d77a0adbd0f105b1c2dc01ae83a/raw/f5a86d9e0d05d391dec58545c0c31b43271a3541/requirements.txt > requirements.txt",  # E501
     ]
 }
 

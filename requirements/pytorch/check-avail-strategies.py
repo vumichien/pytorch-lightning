@@ -1,6 +1,6 @@
-import bagua  # noqa: F401
-import deepspeed  # noqa: F401
-import fairscale  # noqa: F401
+import bagua
+import deepspeed
+import fairscale
 import horovod.torch
 
 # returns an error code
