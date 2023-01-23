@@ -7,7 +7,7 @@ import subprocess
 import sys
 from typing import Any, Callable, Optional
 
-import fastapi  # noqa E511
+import fastapi  # E511
 import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
